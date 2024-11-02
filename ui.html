@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>vRP INVENTORY HUD</title>
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"> -->
+    <script src="js/config.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/inventory.js"></script>
+</head>
+
+<body>
+    <div class="ui">
+        <div class="inventory">
+            <div id="info">
+                <div id="playerInfo">0/0KG</div>
+                <div id="otherInfo">0/0KG</div>
+            </div>
+            <div id="playerInventory" data-type="main"></div>
+            <div id="controls">
+                <div class="controls-div">
+                    <input type="text" class="control" id="search" placeholder="Cauta item...">
+                    <input type="number" class="control" id="count" value="1">
+                    <div class="control" id="use">Foloseste</div>
+                    <div class="control" id="give">Ofera</div>
+                </div>
+
+                <div id = "clothdescosdepemine" style="display: none; margin-left: 30%; margin-top: 30%;">
+                    <div class="cloth">
+                        <img id="shirt" src="cloth/shirt.svg"/>
+                        <br>
+                        <img id="vest" src="cloth/vest.svg"/>
+                        <br>
+                        <img id="pants" src="cloth/pants.svg"/>
+                        <br>
+                        <img id="shoes" src="cloth/shoes.svg"/>
+                        <br>
+                        <img id="shirt" src="cloth/jacket.svg"/>
+                        <br>
+                        <img id="hat" src="cloth/hat.svg"/>
+                        <br>
+                        <img id="glasses" src="cloth/glasses.svg"/>
+                        <br>
+                        <img id="watch" src="cloth/watch.svg"/>
+                        <br>
+                        <img id="mask" src="cloth/mask.svg"/>
+                        <br>
+                        <img id="bag" src="cloth/bag.svg"/>
+                        <br>
+                        <img id="neck" src="cloth/necklace.svg"/>
+                        <br>
+                        <img id="gloves" src="cloth/gloves.svg"/>
+                    </div>
+                </div>
+            </div>
+
+            <div id="otherInventory" data-type="second">
+
+            </div>
+            <div id="description"></div>
+        </div>
+    </div>
+
+    <div id="hotbar"></div>
+    <div id="notifications"></div>
+
+</body>
+
+</html>
